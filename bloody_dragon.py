@@ -81,6 +81,7 @@ def lis():
     print("type - to type in mobile")
     print("net state - to see net state of mobile")
     print("restart - to restart mobile")
+    print("openurl -to open a url in mobile")
     print("wifi on - to switch on wifi in mobile (sometimes root required!)")
     print("wifi off - to switch off wifi in mobile(sometimes root required!)")
     print("new tools adding soon!")
@@ -150,6 +151,15 @@ def tools():
             print(logo)
             print("done!")
             os.system("adb shell svc wifi disable")
+        elif x=="openurl":
+            os.system("clear")
+            print(banner)
+            print(logo)
+            k=input("enter the url to open:")
+            os.system("adb shell am start -a android.intent.action.VIEW -d "+k)
+            os.system("clear")
+            print(banner)
+            print(logo)
         else:
             os.system("clear")
             print(banner)
