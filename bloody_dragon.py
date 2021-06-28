@@ -84,12 +84,14 @@ def lis():
     print("openurl -to open a url in mobile")
     print("wifi on - to switch on wifi in mobile (sometimes root required!)")
     print("wifi off - to switch off wifi in mobile(sometimes root required!)")
+    print("adv prop -for getting advanced properties")
+    print("shell - for opening mobile shell")
     print("new tools adding soon!")
 def tools():
     print(banner)
     print(logo)
-    print("enter \"tools\" for listing tools")
     while True:
+        print("enter \"tools\" for listing tools")
         x=input("enter the tool:")
         if x=="tools":
             lis()
@@ -160,6 +162,19 @@ def tools():
             os.system("clear")
             print(banner)
             print(logo)
+        elif x=="adv prop":
+            os.system("clear")
+            print(banner)
+            print(logo)
+            os.system("adb shell getprop | grep -e 'model' -e 'version.sdk' -e 'manufacturer' -e 'hardware' -e 'platform' -e 'revision' -e 'serialno' -e 'product.name' -e 'brand'")
+        elif x=="shell":
+            os.system("clear")
+            print(banner)
+            print(logo)
+            os.system("adb shell")
+            os.system("clear")
+            print(banner)
+            print(logo)          
         else:
             os.system("clear")
             print(banner)
