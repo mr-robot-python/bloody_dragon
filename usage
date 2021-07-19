@@ -2,5 +2,4 @@ open terminal and type :
 
 git clone https://github.com/BLINKING-IDIOT/bloody_dragon
 cd bloody_dragon
-sudo apt install requirements.txt
 python3 bloody_dragon.py
