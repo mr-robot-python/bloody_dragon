@@ -1,9 +1,0 @@
-before using bloody_dragon.py
-make sure you install scrcpy , adb and python3 in your system!
-if not installed install it by executing:
-"sudo apt install adb scrcpy python3"
-after this you can launch bloody_dragon.py by executing:
-
-git clone https://github.com/BLINKING-IDIOT/bloody_dragon
-cd bloody_dragon
-python3 bloody_dragon.py
