@@ -1,3 +1,0 @@
-scrcpy
-adb
-python3
