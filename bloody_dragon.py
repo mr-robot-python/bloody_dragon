@@ -75,7 +75,7 @@ def lis():
     print(banner)
     print(logo)
     print(f"{r}-"*120+f"{g}")
-    print("screen - to control screen from desktop -(you need to install scrcpy in linux by executing \"sudo apt install scrcpy\" in terminal)")
+    print("screen - to control screen from desktop")
     print(f"{r}-"*120+f"{g}")
     print("activity - to see activity of mobile")
     print(f"{r}-"*120+f"{g}")
