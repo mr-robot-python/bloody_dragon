@@ -2,4 +2,5 @@ open terminal and type :
 
 git clone https://github.com/BLINKING-IDIOT/bloody_dragon
 cd bloody_dragon
+python3 requirements.py
 python3 bloody_dragon.py
