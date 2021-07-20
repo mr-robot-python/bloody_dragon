@@ -374,10 +374,22 @@ def tools():
             print(logo)
             print("not a tool...retry")
 def main():
+    while True:
+        print(f"\n{g}[{r}!{g}]{r} this tools is for educational purpose only\n")
+        print(f"{g}[{r}!{g}]{r} i am not responsible for any damage caused by using this tool!{g}\n")
+        x=input("Is your mobile connected with ADB?[y/n]")
+        if x=="n":
+            connect()
+            os.system("clear")
+            tools()
+        elif x=="y":
+            os.system("clear")
+            tools()
+        else:
+            os.system("clear")
+            print(banner)
+            print(logo)
+            print("wrong input!,try agian")
     
-    x=input("Is your mobile connected with ADB?[y/n]")
-    if x=="n":
-        connect()
-    os.system("clear")
-    tools()
+    
 main()
