@@ -51,6 +51,8 @@ def wireless():
     print("make sure android debugging is on in your mobile\nmake sure your pc and mobile are connected on same network!")
     print("now connect your mobile with pc using usb!...")
     input("press enter to continue.....")
+    print(f"{r}check your phone! sometimes there will be a permisson to allow!")
+    print(f"{r}enter always allow this computer and give permission")
     os.system("adb tcpip 5555")
     print("now disconnect your phone")
     input("press enter to continue.....")
@@ -59,6 +61,8 @@ def wireless():
 def wired():
     print("make sure android debugging is on in your mobile")
     print("just connect your mobile with pc using usb!")
+    print(f"{r}check your phone! sometimes there will be a permisson to allow!")
+    print(f"{r}enter always allow this computer and give permission")
     input("press enter to continue.....")
 def connect():
     os.system("clear")
@@ -127,6 +131,7 @@ def tools():
         print(f"{g}[{r}14{g}]{y}upload")
         print(f"{g}[{r}15{g}]{y}keycode")
         print(f"{g}[{r}16{g}]{y}about Developers")
+        print(f"{g}[{r}17{g}]{y}tool not working?")
         print(f"{g}[{r}99{g}]{y}exit")
         x=input(f"enter the tool:{r}")
         if x=="0":
@@ -349,12 +354,27 @@ def tools():
             print("please give a star to this tool!")
         elif x=="99":
             exit()
+        elif x=="17":
+            os.system("clear")
+            print(banner)
+            print(logo)
+            print("make sure android debugging is on in your mobile")
+            xy = os.popen("adb shell getprop ro.build.version.release").read()
+            print(f"{r}check your phone! sometimes there will be a permisson to allow!")
+            print(f"{r}enter always allow this computer and give permission")
+            print(f"{g}now try agian")
+            input("press enter to continue")
+            del xy
+            os.system("clear")
+            print(banner)
+            print(logo)
         else:
             os.system("clear")
             print(banner)
             print(logo)
             print("not a tool...retry")
 def main():
+    
     x=input("Is your mobile connected with ADB?[y/n]")
     if x=="n":
         connect()
