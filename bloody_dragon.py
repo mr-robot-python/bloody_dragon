@@ -43,7 +43,7 @@ _#/|##########/\######(   /\   )######/\##########|\#_
                   (vvv(VVV)(VVV)vvv){y}
                   
                    by BLINKING-IDIOT
-                 {p}insta: @a.r.n_beatzzzz{g}
+                 {p}insta: @arn_beatz{g}
                   """
 print(banner)
 print(logo)
