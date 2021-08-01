@@ -62,18 +62,11 @@ def wireless():
     os.system("adb shell ip route > addrs.txt")
     f=open("addrs.txt","r")
     ip=f.read()
-    ip=ip[56:68]
+    ip=ip[56:67]
     f.close()
-    print(f"{g}[{r}!{g}]{r}Trying automatic connection....!")
-    if ip=="":
-        print(f"{g}[{r}!{g}]{r}Automatic connection failed")
-        print(f"{g}[{r}!{g}]{r}try manual connection")
+    x=input(f"{y}Is this your mobile ip address:{ip} {g}({r}y{g}/{r}n{g})?")
+    if x=="n":
         ip=input(f"{y}enter the ip address of mobile:")
-    else:
-        if ip[11]==" ":
-            ip=ip[:11]
-        print(f"{g}[{r}!{g}]{r}Automatic connection success!")
-    print(f"{g}ip adress={y}{ip}")
     os.system("adb tcpip 5555")
     print(f"{y}now disconnect your phone")
     input("press enter to continue...")
