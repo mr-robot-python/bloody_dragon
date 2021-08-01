@@ -91,6 +91,7 @@ def reboot():
 	os.system("clear")
 	print(banner)
 	print(logo)
+	print(f"{g}[{r}!{g}]{y}REBOOTING THE DEVICE!>>>")
 	os.system("adb shell reboot")
 	os.system("clear")
 	print(banner)
