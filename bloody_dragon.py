@@ -56,6 +56,8 @@ def wireless():
  Counter=0
  print(f"{g}[{r}!{g}]{y}make sure android debugging is on in your mobile\n{g}[{r}!{g}]{y}make sure your pc and mobile are connected on same network!")
  print(f"{g}[{r}!{g}]{y}now connect your mobile with pc using usb!...")
+ print(f"{g}[{r}!{g}]{r}check your phone! sometimes there will be a permisson to allow!")
+ print(f"{g}[{r}!{g}]{r}enter always allow this computer and give permission")
  input("press enter to continue.....")
  print(f"{g}[{r}!{g}]{r}check your phone! sometimes there will be a permisson to allow!")
  print(f"{g}[{r}!{g}]{r}enter always allow this computer and give permission")
